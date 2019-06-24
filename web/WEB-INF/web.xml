@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ServlDoctor</servlet-name>
+        <servlet-class>controller.ServlDoctor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServlSesion</servlet-name>
+        <servlet-class>controller.ServlSesion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServlUsuario</servlet-name>
+        <servlet-class>controller.ServlUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServlCita</servlet-name>
+        <servlet-class>controller.ServlCita</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServlDoctor</servlet-name>
+        <url-pattern>/ServlDoctor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServlSesion</servlet-name>
+        <url-pattern>/ServlSesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServlUsuario</servlet-name>
+        <url-pattern>/ServlUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServlCita</servlet-name>
+        <url-pattern>/ServlCita</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
